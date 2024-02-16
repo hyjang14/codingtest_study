@@ -7,4 +7,5 @@ for i in range(15):
     for j in range(5):
         if i < len(s[j]):
             word += s[j][i]
+            
 print(word)
