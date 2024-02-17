@@ -17,6 +17,6 @@ for i in range(9):
             y = j
 
 print(max)
-print("%d %d" % (x, y))
+print("%d %d" % (x+1, y+1))
 
 
