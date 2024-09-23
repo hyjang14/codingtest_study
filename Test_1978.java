@@ -19,7 +19,7 @@ public class Test_1978 {
 		for(int i= 2; i <= 100; i++) {
 			temp.add(i);
 		}
-		System
+
 		
 		
 		int[] prime_num = new int[0];

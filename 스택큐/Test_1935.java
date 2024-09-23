@@ -3,6 +3,9 @@ package 스택큐;
 import java.util.*;
 import java.io.*;
 
+// 문제 설명 : 주어지는 후위표기식을 계산해서 최종 값을 출력
+// 핵심 개념 : 스택, 후위표기식
+
 public class Test_1935 {
     public static void main(String[] args) throws IOException {
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
@@ -30,10 +33,12 @@ public class Test_1935 {
                 s.push(arr[str.charAt(i) - 'A']);
             }
             else {
+                // 비어있지 않을 경우
                 if (!s.isEmpty()) {
                     double num1 = s.pop();
                     double num2 = s.pop();
 
+                    // 4가지 경우의 수
                     if (str.charAt(i) == '+') {
                         result = num2 + num1;
                         s.push(result);
@@ -50,6 +55,7 @@ public class Test_1935 {
                 }
             }
         }
+        // 최종 계산결과
         System.out.printf("%.2f", s.pop());
 
         br.close();

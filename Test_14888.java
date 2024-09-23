@@ -31,8 +31,8 @@ public class Test_14888 {
 		for(int i = 0; i < 4; i++)
 			math[i] = Integer.parseInt(st2.nextToken());
 		
-		res_max = 
-		solve
+
+
 	}
 	
 	public static void solve() {
